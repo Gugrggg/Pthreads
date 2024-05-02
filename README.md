@@ -13,6 +13,7 @@ A principal diferença entre eles é o uso de um mutex no primeiro código para 
 π calculados por cada versão.
 
 Divergencias:
+
 Com Mutex: O acesso à variável sum é sincronizado usando um mutex. Isso garante que apenas uma thread por vez possa atualizar sum, resultando em um cálculo preciso e consistente de 𝜋 π.
 
 Sem Mutex: Múltiplas threads podem tentar atualizar sum ao mesmo tempo sem qualquer coordenação. Isso pode causar sobreposições na escrita, onde as atualizações de uma ou mais threads podem ser perdidas. O resultado final de sum pode ser menor do que deveria, afetando a precisão do valor calculado de 𝜋
